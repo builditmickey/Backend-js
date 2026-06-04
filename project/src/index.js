@@ -30,7 +30,7 @@ connectDB()
 // connectDB()
 
 // approach 2 using IIFE (Immediately Invoked Function Expression)
-// proffesionals use semicolon at beginning to reduce wrong formatting cases
+// professionals use semicolon at beginning to reduce wrong formatting cases
 // (async () => {
 //   try {
 //     await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
