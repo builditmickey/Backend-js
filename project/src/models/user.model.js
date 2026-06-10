@@ -49,9 +49,9 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// arrow function is not used in callback because it does have this refernce
+// arrow function is not used in callback because it does have 'this' refernce
 userSchema.pre("save", async function (next) {
-  //only encypt the password if was changed
+  //only encrypt the password if it was changed
   if (!this.ismodified("password")) return next();
 
   this.password = bcrypt.hash(this.password, 10);
