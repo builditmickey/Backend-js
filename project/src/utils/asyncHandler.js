@@ -4,7 +4,7 @@ const asyncHandler = (requestHandler) => {
   };
 };
 
-export default asyncHandler;
+export { asyncHandler };
 
 // learn about higher order functions
 // following is the try catch version of asyncHandler
